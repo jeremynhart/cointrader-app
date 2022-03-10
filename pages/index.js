@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Wrapper>
       <WalletConnect>
-      <button onClick={() => connectWallet('injected')}>Connect Wallet</button>
+      <Button onClick={() => connectWallet('injected')}>Connect Wallet</Button>
       </WalletConnect>
     </Wrapper>
   )
@@ -28,4 +28,17 @@ const WalletConnect = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`
+const Button = styled.div`
+  border: 1px solid #282b2f;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  font weight: 500;
+  border-radius: 0.4rem;
+  background-color: #3773f5;
+  color: #000;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
