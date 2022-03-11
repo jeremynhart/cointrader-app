@@ -4,9 +4,13 @@ import styled from 'styled-components'
 
 const Header = () => {
   return (
-    <Button style={{ backgroundColor: '#3773f5', color: "#000" }}>
-    Buy / Sell
-    </Button>
+    <Wrapper>
+      <Title> Assets </Title>
+      <ButtonsContainer>
+        <Button style={{ backgroundColor: '#3773f5', color: "#000" }}> Buy / Sell </Button>
+        <Button> Send / Receive </Button>
+      </ButtonsContainer>
+    </Wrapper>
   )
 }
 
@@ -16,19 +20,20 @@ const Wrapper = styled.div`
 width: calc(100% - 3rem);
 padding: 1rem 1.5rem;
 border-bottom: 1px solid #282b2f;
-dilplay: flex;
+display: flex;
 align-items: center;
 `
 
 const Title = styled.div`
 font-size: 2rem;
 font-weight: 600;
+display: flex;
 flex: 1;
-dilplay: flex;
 `
 
-const ButonsContainer = styled.div`
-dilplay: flex;
+
+const ButtonsContainer = styled.div`
+display: flex;
 `
 
 const Button = styled.div`
